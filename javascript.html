@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+
+    <script>
+
+        function oi() 
+        {
+            var nome;
+            nome = prompt("Digite seu nome");
+
+            alert("Oi "+ nome +"!!!");
+        }
+
+        // tipos de variaveis
+        var nome = "Edir"; // texto -> string
+        var idade = 23; // numero ->  integer => number
+        var peso = 67.2; // number -> float
+        var acordado = true; // boolean 
+
+        // algoritmo
+        // > -- maior
+        // < -- menor
+        // == -- igual
+        // >= -- maior ou igual
+        // <= -- menor ou igual
+        // != -- diferente
+
+        function maior()
+        {
+            var n1 = prompt("digite num1"); // 1 2
+            var n2 = prompt("digite num2"); // 2 2
+
+            if (n1 > n2) 
+            {
+                alert("O numero maior é: " + n1);
+            } else if(n1 < n2)
+            {
+                alert("O numero maior é: " + n2);
+            } else {
+                alert("Os numeros são iguais")
+            }
+        }
+
+        function maior3()
+        {
+            var n1 = prompt("digite num1"); // 1 1 3 3 2 2
+            var n2 = prompt("digite num2"); // 2 3 2 1 1 3
+            var n3 = prompt("digite num3"); // 3 2 1 2 3 1
+
+            if (n1 > n2) 
+            {
+                if (n1 > n3)
+                {
+                    alert("O numero maior é: " + n1);
+                } else 
+                {
+                    alert("O numero maior é: " + n3);
+                }
+
+            } else {
+                if (n2 > n3) 
+                {
+                    alert("O numero maior é: " + n2);
+                } else {
+                    alert("O numero maior é: " + n3);
+                }
+            }
+
+
+        }
+
+
+    </script>
+
+</head>
+<body>
+
+    <h1>Javascript</h1>
+
+    <p>Javascript é diferente de Java</p>
+
+    <button onclick="oi()">Clique aqui</button>
+    <button onclick="maior()">Qual é o maior?</button>
+    <button onclick="maior3()">Qual é o maior dos 3?</button>
+    
+</body>
+</html>
