@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+
+    <style>
+        .texto {
+            border: 1px solid black;
+            margin-top: 20px;
+            padding: 6px;
+        }
+    </style>
+
+    <script>
+
+        function clique()
+        {
+            var texto = entrada.value;
+            //console.log(texto);
+            resultado.innerText = texto;
+        }
+
+    </script>
+</head>
+<body>
+    <h1>Javascript</h1>
+
+    <input id="entrada" type="text"  />
+    <button onclick="clique()">Clique aqui</button>
+    <br ><br>
+
+    <input id="n1" type="text"  />
+    <input id="n2" type="text"  />
+    <button onclick="">Soma</button>
+    <button onclick="">Sub</button>
+    <button onclick="">Div</button>
+    <button onclick="">Mult</button>
+
+
+    <div id="resultado" class="texto">
+        resultado
+    </div>
+</body>
+</html>
