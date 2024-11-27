@@ -5,48 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vetores</title>
 
-    <script>
-
-        // estrutura de dados
-        // vetores -> array
-
-        var cidade = ["Curitiba", "Colombo", "Pinhais"];
-
-        // retorna a cidade da posição
-        cidade[1];
-
-        //adiciona item no final
-        cidade.push("Araucaria");
-
-        console.log(cidade);
-
-        // loops -> laço de repetição
-        var ini = 1;
-        var fim = 10;
-
-        while (ini <= fim)
-        {
-            console.log(ini);
-            ini = ini + 1; 
-        }
-
-
-        function listar()
-        {
-
-
-            var res = "<ul>"
-                + "<li>"+ cidade[0] +"</li>"
-                + "<li>"+ cidade[1] +"</li>"
-                + "<li>"+ cidade[2] +"</li>"
-                + "<li>"+ cidade[3] +"</li>"
-                + "</ul>";
-            
-            resultado.innerHTML = res;
-        }
-
-
+    <script src="vetores.js">
     </script>
+
     <style>
         .texto {
             border: 1px solid black;
@@ -60,6 +21,10 @@
     <h1>Vetores</h1>
 
     <button onclick="listar()">Listar</button>
+    <br>
+
+    <input type="text" id="nome" />
+    <button>Add</button>
 
     <div id="resultado" class="texto">
         resultado
