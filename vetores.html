@@ -12,17 +12,62 @@
 
         var cidade = ["Curitiba", "Colombo", "Pinhais"];
 
+        // retorna a cidade da posição
+        cidade[1];
+
         //adiciona item no final
-        cidade.push("Araucaria")
+        cidade.push("Araucaria");
 
         console.log(cidade);
 
+        // loops -> laço de repetição
+        var ini = 1;
+        var fim = 10;
+
+        while (ini <= fim)
+        {
+            console.log(ini);
+            ini = ini + 1; 
+        }
+
+
+        function listar()
+        {
+
+
+            var res = "<ul>"
+                + "<li>"+ cidade[0] +"</li>"
+                + "<li>"+ cidade[1] +"</li>"
+                + "<li>"+ cidade[2] +"</li>"
+                + "<li>"+ cidade[3] +"</li>"
+                + "</ul>";
+            
+            resultado.innerHTML = res;
+        }
+
 
     </script>
+    <style>
+        .texto {
+            border: 1px solid black;
+            margin-top: 20px;
+            padding: 6px;
+        }
+    </style>
 </head>
 <body>
 
     <h1>Vetores</h1>
+
+    <button onclick="listar()">Listar</button>
+
+    <div id="resultado" class="texto">
+        resultado
+        <ul>
+            <li>Curitiba</li>
+            <li>Pinhais</li>
+        </ul>
+    </div>
     
 </body>
 </html>

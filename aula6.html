@@ -39,7 +39,11 @@
         // eDIr -> Edir
         function letra()
         {
+            var texto = entrada.value;
+            var letra = texto.charAt(0).toUpperCase();
+            var resto = texto.slice(1).toLowerCase();
 
+            resultado.innerText = letra + resto;
         }
 
     </script>
