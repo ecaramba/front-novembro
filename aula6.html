@@ -22,6 +22,12 @@
             resultado.innerText = texto;
         }
 
+        function soma()
+        {
+            var res = parseInt(n1.value) + parseInt(n2.value);
+            resultado.innerText = res;
+        }
+
     </script>
 </head>
 <body>
@@ -29,11 +35,12 @@
 
     <input id="entrada" type="text"  />
     <button onclick="clique()">Clique aqui</button>
+    <button onclick="">Maiusculas</button>
     <br ><br>
 
     <input id="n1" type="text"  />
     <input id="n2" type="text"  />
-    <button onclick="">Soma</button>
+    <button onclick="soma()">Soma</button>
     <button onclick="">Sub</button>
     <button onclick="">Div</button>
     <button onclick="">Mult</button>
