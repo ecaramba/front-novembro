@@ -28,6 +28,20 @@
             resultado.innerText = res;
         }
 
+        function maiusculas()
+        {
+            var texto = entrada.value;
+            resultado.innerText = texto.toUpperCase();
+        }
+        
+        // edir -> Edir
+        // EDIR -> Edir
+        // eDIr -> Edir
+        function letra()
+        {
+
+        }
+
     </script>
 </head>
 <body>
@@ -35,7 +49,8 @@
 
     <input id="entrada" type="text"  />
     <button onclick="clique()">Clique aqui</button>
-    <button onclick="">Maiusculas</button>
+    <button onclick="maiusculas()">Maiusculas</button>
+    <button onclick="letra()">1 letra</button>
     <br ><br>
 
     <input id="n1" type="text"  />
