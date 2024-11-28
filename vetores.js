@@ -49,3 +49,20 @@
             
             resultado.innerHTML = res;
         }
+
+        function add()
+        {
+            var texto = nome.value;
+
+            if (cidade.includes(texto) == false)
+            {
+                cidade.push(texto);
+                listar();
+            }
+        }
+
+        function ordenar()
+        {
+            cidade.sort();
+            listar();
+        }
