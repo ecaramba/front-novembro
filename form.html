@@ -1,11 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form cadastro</title>
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
 </head>
 <body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h2 class="mt-4">Cadastro</h2>
+
+                <form>
+
+                    <div class="my-2">
+                        <label class="form-label">Nome</label>
+                        <input type="text" class="form-control" placeholder="Digite seu nome" />
+                    </div>
+
+                    <div class="my-2">
+                        <label class="form-label">Email</label>
+                        <input type="text" class="form-control" placeholder="email@gmail.com" />
+                    </div>
+                <div class="row">
+                    <div class="my-2 col-4">
+                        <label class="form-label">CPF</label>
+                        <input type="text" class="form-control" placeholder="123.123.123-00" />
+                    </div>
+                    <div class="my-2 col-6 offset-2">
+                        <label class="form-label">Sexo</label>
+                        
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" name="sexo" />
+                            <label>Masculino</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" name="sexo" />
+                            <label>Feminino</label>
+                        </div>
+                    </div>
+                </div>
+                    <div class="my-2">
+                        <label class="form-label">Cidade</label>
+                        <select class="form-select">
+                            <option>Curitiba</option>
+                            <option>Colombo</option>
+                            <option>Pinhais</option>
+                            <option>Araucaria</option>
+                        </select>
+                    </div>
+
+                    <button class="btn btn-primary mt-4">Cadastrar</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
     
 </body>
 </html>
