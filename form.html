@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form cadastro</title>
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <script src="jquery-3.7.1.js"></script>
+
+    <script src="form.js"></script>
+
 </head>
 <body>
 
@@ -17,7 +21,10 @@
 
                     <div class="my-2">
                         <label class="form-label">Nome</label>
-                        <input type="text" class="form-control" placeholder="Digite seu nome" />
+                        <input id="nome" type="text" class="form-control" placeholder="Digite seu nome" />
+                        <div class="invalid-feedback">
+                            O campo é obrigatorio.
+                        </div>
                     </div>
 
                     <div class="my-2">
@@ -44,15 +51,19 @@
                 </div>
                     <div class="my-2">
                         <label class="form-label">Cidade</label>
-                        <select class="form-select">
+                        <select id="cidade" class="form-select">
+                            <option value="0">Selecione</option>
                             <option>Curitiba</option>
                             <option>Colombo</option>
                             <option>Pinhais</option>
                             <option>Araucaria</option>
                         </select>
+                        <div class="invalid-feedback">
+                            Selecione uma cidade
+                        </div>
                     </div>
 
-                    <button class="btn btn-primary mt-4">Cadastrar</button>
+                    <button id="bt-cadastro" type="button" class="btn btn-primary mt-4">Cadastrar</button>
 
                 </form>
             </div>
