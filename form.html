@@ -29,12 +29,12 @@
 
                     <div class="my-2">
                         <label class="form-label">Email</label>
-                        <input type="text" class="form-control" placeholder="email@gmail.com" />
+                        <input id="email" type="text" class="form-control" placeholder="email@gmail.com" />
                     </div>
                 <div class="row">
                     <div class="my-2 col-4">
                         <label class="form-label">CPF</label>
-                        <input type="text" class="form-control" placeholder="123.123.123-00" />
+                        <input type="text" id="cpf" class="form-control" placeholder="123.123.123-00" />
                     </div>
                     <div class="my-2 col-6 offset-2">
                         <label class="form-label">Sexo</label>
@@ -46,7 +46,11 @@
                         <div class="form-check">
                             <input type="radio" class="form-check-input" name="sexo" />
                             <label>Feminino</label>
+                            <div class="invalid-feedback">
+                                O campo é obrigatorio.
+                            </div>
                         </div>
+                        
                     </div>
                 </div>
                     <div class="my-2">
